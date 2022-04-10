@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {}
+    "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {}
   },
   "projects": {
-    "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {
+    "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
+        "projectUniqueName": "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
         "projectName": "FluentAPI",
-        "projectPath": "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
+        "projectPath": "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
         "packagesPath": "C:\\Users\\salamalakala\\.nuget\\packages\\",
-        "outputPath": "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\obj\\",
+        "outputPath": "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -26,7 +26,9 @@
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://api.nuget.org/v3/index.json": {},
+          "https://artifacts.realpage.com/artifactory/api/nuget/nuget-virtual": {}
         },
         "frameworks": {
           "net6.0": {
