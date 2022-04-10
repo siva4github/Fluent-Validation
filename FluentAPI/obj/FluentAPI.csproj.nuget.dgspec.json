@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {}
+    "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {}
   },
   "projects": {
-    "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {
+    "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
+        "projectUniqueName": "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
         "projectName": "FluentAPI",
-        "projectPath": "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
+        "projectPath": "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
         "packagesPath": "C:\\Users\\salamalakala\\.nuget\\packages\\",
-        "outputPath": "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\obj\\",
+        "outputPath": "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -26,9 +26,7 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://api.nuget.org/v3/index.json": {},
-          "https://artifacts.realpage.com/artifactory/api/nuget/nuget-virtual": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -46,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

@@ -1,0 +1,19 @@
+# .Net
+
+    Get list of projects for
+    ➜ dotnet new -l
+
+    Create new API project
+    ➜  dotnet new webapi -n PMA.API
+
+    Update EF Tool
+    ➜  dotnet tool update --global dotnet-ef 
+
+    Geberate Migrations
+    ➜  dotnet ef migrations add UserRolesAdded
+
+    Update Database
+    ➜  dotnet ef database update
+
+    Fluent Validation
+    Install-Package FluentValidation.AspNetCore

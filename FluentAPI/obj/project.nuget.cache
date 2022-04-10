@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "5Srxkd0NYdw4WJozPFd+78+zgVe283C5kI+CCH7X77dPb5hjeQzqNNwTbqz/Lfio5OAf5kpOHRa6/GNFZYn0gg==",
+  "dgSpecHash": "ILhMsZTg0GEPoCOT/mQE+iIayU37c7wBltpR8SWEBcXls+xss290qzacdn7wFQQP1EIvAHV5A7mTjDTJajqX5w==",
   "success": true,
-  "projectFilePath": "C:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
+  "projectFilePath": "c:\\Siva\\Personal\\GitHub\\Fluent Validation\\FluentAPI\\FluentAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\salamalakala\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\salamalakala\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\salamalakala\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\salamalakala\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\salamalakala\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\salamalakala\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\salamalakala\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\salamalakala\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
