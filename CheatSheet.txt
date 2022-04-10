@@ -17,3 +17,6 @@
 
     Fluent Validation
     Install-Package FluentValidation.AspNetCore
+
+    gitignore
+    ➜  dotnet new gitignore
