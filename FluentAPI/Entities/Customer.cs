@@ -7,6 +7,7 @@ namespace FluentAPI.Entities
         public string Forename { get; set; }
         public decimal Discount { get; set; }
         public Address Address { get; set; }
+        public List<Order> Orders { get; set; } = new List<Order>();
 
     }
 }
