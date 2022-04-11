@@ -9,6 +9,10 @@ namespace FluentAPI.Validations
         {
             //The rule will run a NotNull check against each item in the AddressLines collection.
             RuleForEach(person => person.AddressLines).NotNull();
+
+            RuleFor(p => p.Name).NotNull();
+            RuleFor(p => p.Email).NotNull();
+            RuleFor(p => p.DateOfBirth).GreaterThan(DateTime.MinValue);
         }
     }
 }

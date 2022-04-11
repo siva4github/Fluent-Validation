@@ -33,7 +33,7 @@ namespace FluentAPI.Validations
             // Above two rules can be re-written as
             RuleFor(c => c.Orders).Must(c => c.Count <=10).WithMessage("No More than 10 orders are allowed")
                 .ForEach(c => {
-                    c.Must(c => c.Total > 0).WithMessage("Order must have a total of more than 0")
+                    c.Must(c => c.Total > 0).WithMessage("Order must have a total of more than 0");
                 });
 
         }

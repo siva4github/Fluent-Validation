@@ -14,6 +14,27 @@ namespace FluentAPI.Controllers
         public async Task<IActionResult> Validate()
         {
 
+            //CustomerValidation()
+            ContactRequestValidation();
+
+            await Task.CompletedTask;
+            return Ok();
+        }
+
+
+        private void ContactRequestValidation()
+        {
+            ContactRequest contRequest = new ContactRequest();
+            contRequest.Contact = new Organisation();
+            contRequest.Contact.Name = "Siva";
+
+            ContactRequestValidator validator = new ContactRequestValidator();
+            ValidationResult result = validator.Validate(contRequest);
+            string allMessages = result.ToString("~");
+            Console.WriteLine(allMessages);
+        }
+        private void CustomerValidation()
+        {
             Customer customer = new Customer();
             customer.Surname = "foo";
             CustomerValidator validator = new CustomerValidator();
@@ -39,15 +60,12 @@ namespace FluentAPI.Controllers
             // or
             //validator.Validate(customer, options => options.ThrowOnFailures());
             //or
-            validator.Validate(customer, options => {
-                options.ThrowOnFailures();
+            // validator.Validate(customer, options => {
+            //     options.ThrowOnFailures();
 
-                options.IncludeRuleSets("MyRules");
-                options.IncludeProperties(x=> x.Forename);
-            });
-
-            await Task.CompletedTask;
-            return Ok();
+            //     options.IncludeRuleSets("MyRules");
+            //     options.IncludeProperties(x=> x.Forename);
+            // });
         }
     }
 }
