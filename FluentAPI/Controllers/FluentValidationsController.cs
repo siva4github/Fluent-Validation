@@ -14,15 +14,53 @@ namespace FluentAPI.Controllers
         public async Task<IActionResult> Validate()
         {
 
-            //CustomerValidation()
-            ContactRequestValidation();
+            //RegularAndCollectionValidation()
+            //InheritValidation();
+            //RuleSetValidation();
 
             await Task.CompletedTask;
             return Ok();
         }
 
 
-        private void ContactRequestValidation()
+        private void RuleSetValidation()
+        {
+           var validator =  new ClientValidator();
+           var client =  new Client();
+           //var result = validator.Validate(client);
+
+           // Surname and Forename are grouped together in a “Names” RuleSet.
+           //We can invoke only these rules by passing additional options to the Validate method:
+           //var result = validator.Validate(client, options=> options.IncludeRuleSets("Names"));
+
+            // can execute multiple rulesets by passing multiple ruleset names to IncludeRuleSets:
+            // var result = validator.Validate(client, options => {
+            //     options.IncludeRuleSets("Names", "MyRuleSet", "SomeOther");
+            // });
+
+            // can also include all the rules not part of a ruleset by using calling IncludeRulesNotInRuleSet, 
+            // or by using the special name “default” (case insensitive):
+            // var result = validator.Validate(client, options => {
+            //     // Option 1: IncludeRulesNotInRuleSet is the equivalent of using the special ruleset name "default"
+            //     //options.IncludeRuleSets("Names").IncludeRulesNotInRuleSet();
+
+            //     // Option 2: This does the same thing
+            //     options.IncludeRuleSets("Names", "default");
+            //  });
+
+            // can force all rules to be executed regardless of whether or not they’re in a ruleset by calling IncludeAllRuleSets 
+            //(this is the equivalent of using IncludeRuleSets("*") )
+            var result = validator.Validate(client, options => {
+                options.IncludeAllRuleSets();
+             });
+
+
+
+           string allMessages = result.ToString("~");
+           Console.WriteLine(allMessages);
+
+        }
+        private void InheritValidation()
         {
             ContactRequest contRequest = new ContactRequest();
             contRequest.Contact = new Organisation();
@@ -33,7 +71,7 @@ namespace FluentAPI.Controllers
             string allMessages = result.ToString("~");
             Console.WriteLine(allMessages);
         }
-        private void CustomerValidation()
+        private void RegularAndCollectionValidation()
         {
             Customer customer = new Customer();
             customer.Surname = "foo";
